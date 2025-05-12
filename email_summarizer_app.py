@@ -5,8 +5,8 @@ import os
 from bs4 import BeautifulSoup
 
 # === Configuration ===
-CLIENT_ID = '6aecb347-917b-4309-9fbb-58603f4905c8'
-TENANT_ID = '53ad779a-93e7-485c-ba20-ac8290d7252b'
+CLIENT_ID = os.getenv("OUTLOOK_CLIENT_ID")
+TENANT_ID = os.getenv("OUTLOOK_TENANT_ID")
 AUTHORITY = f'https://login.microsoftonline.com/{TENANT_ID}'
 SCOPES = ["Mail.Read", "Calendars.Read"]
 CACHE_FILE = 'token_cache.bin'
