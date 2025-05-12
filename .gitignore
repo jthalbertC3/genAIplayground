@@ -172,3 +172,9 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# personal stuff
+outlook-env/
+credentials.json
+token_cache.bin
+.DS_Store
