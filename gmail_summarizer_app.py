@@ -67,7 +67,7 @@ def summarize_email(email):
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": "You are a helpful assistant but you are fairly sarcastic"},
             {"role": "user", "content": f"Summarize this email: {email}"}
         ],
         temperature=0.3
